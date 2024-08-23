@@ -1,0 +1,963 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ramesh Govindaswamy</title>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="img/favicon.png">
+
+  <!-- CSS Files -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/circle.css" rel="stylesheet">
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/fm.revealator.jquery.min.css" rel="stylesheet">
+  <link href="css/tiny-slider.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Color Stylesheet -->
+  <link href="css/colors/red-color.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f9279329f6.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+
+
+  <style type="text/css">
+    .timee {
+      color: #fff;
+      font-size: 14px;
+      padding: 3px 12px;
+      display: inline-block;
+      margin-bottom: 12px;
+      border-radius: 5px;
+      font-weight: 500;
+      box-shadow: 0 2px 7px rgb(0 0 0 / 5%);
+      background-color: #3c3c3c;
+      opacity: .8;
+    }
+  </style>
+
+
+  <style type="text/css">
+    /* Position the image container (needed to position the left and right arrows) */
+
+
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 42%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+  </style>
+
+</head>
+
+<body>
+  <!-- Preloader-->
+  <div class="vfx-loader">
+    <div class="loader-wrapper">
+      <div class="loader-content">
+        <div class="loader-dot dot-1"></div>
+        <div class="loader-dot dot-2"></div>
+        <div class="loader-dot dot-3"></div>
+        <div class="loader-dot dot-4"></div>
+        <div class="loader-dot dot-5"></div>
+        <div class="loader-dot dot-6"></div>
+        <div class="loader-dot dot-7"></div>
+        <div class="loader-dot dot-8"></div>
+        <div class="loader-dot dot-center"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header Starts -->
+  <header class="header" id="navbar-collapse-toggle">
+    <!-- Fixed Navigation Starts -->
+    <ul class="icon-menu d-none d-lg-block revealator-slideup revealator-once revealator-delay1">
+      <li class="icon-box tooltip active"><i class="fa fa-home"></i> <a href="#home"></a><span
+          class="tooltiptext tooltip-right">Home</span></li>
+      <li class="icon-box tooltip"><i class="fa fa-id-card"></i> <a href="#about"></a><span
+          class="tooltiptext tooltip-right">About Me</span></li>
+      <li class="icon-box tooltip"><i class="fa fa-image"></i> <a href="#exp"></a><span
+          class="tooltiptext tooltip-right">My Experience</span></li>
+      <li class="icon-box tooltip"><i class="fa fa-envelope"></i> <a href="#contact"></a><span
+          class="tooltiptext tooltip-right">Contact Me</span></li>
+
+    </ul>
+    <!-- Fixed Navigation Ends -->
+    <!-- Mobile Menu Starts -->
+    <nav class="d-block d-lg-none">
+      <div id="menuToggle">
+        <input type="checkbox" />
+        <span></span> <span></span> <span></span>
+        <ul class="list-unstyled" id="menu">
+          <li class="tooltip active"><a href="#home"><i class="fa fa-home"></i></a><span
+              class="tooltiptext tooltip-right">Home</span></li>
+          <li class="tooltip"><a href="#about"><i class="fa fa-id-card"></i></a><span
+              class="tooltiptext tooltip-right">About Me</span></li>
+          <li class="tooltip"><a href="#exp"><i class="fa fa-image"></i></a><span class="tooltiptext tooltip-right">My
+              Experience</span></li>
+          <li class="tooltip"><a href="#contact"><i class="fa fa-envelope"></i></a><span
+              class="tooltiptext tooltip-right">Contact Me</span></li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- Mobile Menu Ends -->
+  </header>
+  <!-- Header Ends -->
+  <!-- Main Content Starts -->
+  <div id="home" class="home">
+    <section
+      class="container-fluid main-container container-home p-0 hero-area-block utf-element-cover-bg element-cover-bg revealator-slideup revealator-once revealator-delay1"
+      style="background-image:url(img/hero_img_1.jpg);">
+      <!--<div class="color-block d-none d-lg-block"></div>-->
+      <div class="row utf-home-details-container align-items-center">
+        <div class="col-12 col-lg-7 offset-lg-3 utf-home-details text-center text-sm-center ">
+          <div>
+            <img src="img/img-mobile.jpg" class="img-fluid main-img-mobile hero-d-none d-sm-block d-lg-none"
+              alt="my picture" />
+            <h6 class="mb-0 d-block d-lg-block">Hi I'm Ramesh Govindaswamy</h6>
+            <h1><span>I Am a</span><span class="typed-words"></span></h1>
+            <p>Detail-oriented Project Engineer with exceptional proficiency in planning, executing, and managing
+              engineering projects. Skilled in coordinating teams, overseeing project timelines, and ensuring successful
+              completion within budget and scope.
+              <br>
+
+            </p>
+            <a href="#about" class="btn btn-about">About Me <i class="fa fa-user-circle"></i></a>
+            <a href="#contact" class="btn btn-contact">Get in Touch <i class="fa fa-envelope"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="utf-fixed-wrapper">
+        <!-- Languages list -->
+        <div class="utf-fixed-block block-right">
+          <ul class="list-unstyled languages-list">
+            <li><a href="#" target="_blank"><span class="single-language">Project Engineer</span></a></li>
+            <li><a href="#" target="_blank"><span class="single-language"> Civil Engineer</span></a></li>
+
+          </ul>
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <!-- Main Content Ends -->
+
+
+  <!-- Page Title Starts -->
+  <div id="about" class="about">
+    <section class="title-section text-center text-sm-center revealator-slideup revealator-once revealator-delay1">
+      <!-- <p class="utf-section-description">About Main Info</p>	 -->
+      <h1>About <span>ME</span></h1>
+      <div class="animated-bar"></div>
+      <p class="text-max-700">
+
+        <i class="fa fa-diamond" aria-hidden="true" style="color: #ff0000;"></i>
+        &nbsp; Project Engineer
+
+
+
+        &nbsp;
+
+        <i class="fa fa-diamond" aria-hidden="true" style="color: #ff0000;"></i>
+
+        &nbsp; Civil Engineer
+
+
+
+        <i class="fa fa-diamond" aria-hidden="true" style="color: #ff0000;"></i>
+      </p>
+    </section>
+    <!-- Page Title Ends -->
+
+    <!-- Main Content Starts -->
+    <section class="main-content revealator-slideup revealator-once revealator-delay1">
+      <div class="container">
+        <div class="row">
+
+          <!-- Personal Info Starts -->
+          <div class="col-12 col-lg-12 col-xl-12">
+            <div class="row">
+
+              <div class="col-xl-5 col-lg-5 col-md-12 col-sm-12 utf-about-user-img">
+                <img style="    margin-top: 23%;" src="img/about_img.jpg" class="img-fluid main-img-mobile" alt="my picture" />
+
+                <!-- <div class="mySlides">
+    <div class="numbertext">1 / 5</div>
+    <img src="img/01.jpg" style="width:100%">
+  </div>
+
+ <div class="mySlides">
+    <div class="numbertext">2 / 5</div>
+    <img src="img/02.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 5</div>
+    <img src="img/03.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 5</div>
+    <img src="img/04.jpg" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">5 / 5</div>
+    <img src="img/05.jpg" style="width:100%">
+  </div>
+
+ 
+ 
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  
+ </div> -->
+
+
+              </div>
+              <div class="row col-xl-7 col-lg-7 col-md-12 utf-about-dtl">
+                <div class="col-12 mb-3">
+                  <h2 style="font-size: 30px;">Ramesh Govindaswamy</h2>
+
+
+                  <ul style="text-align: justify;font-weight: 400;
+    line-height: 1.8;
+  
+    text-align: justify;
+    margin-left: -25px;">
+                    <li>Dedicated to leveraging data-driven insights to enhance decision-making and project outcomes in
+                      civil engineering.</li>
+                    <li>Experienced in designing and implementing detailed project plans to ensure successful and timely
+                      completion of civil engineering projects.</li>
+                    <li>Detail-oriented in choosing and refining civil engineering methodologies to achieve project
+                      objectives effectively.</li>
+                    <li>Committed to rigorous testing and validation to ensure the quality, safety, and reliability of
+                      civil engineering projects.</li>
+                    <li>Resourceful in troubleshooting and optimizing construction workflows to enhance project
+                      efficiency and effectiveness.</li>
+                    <li>Organized multitasker, capable of managing various facets of civil engineering projects
+                      simultaneously.</li>
+                    <li>Analytical thinker, adept at optimizing processes and resources to meet civil engineering
+                      project goals efficiently.</li>
+                    <li>Skilled in applying practical programming languages to streamline engineering processes and
+                      project management.</li>
+                    <li>Dedicated to utilizing data-driven insights for informed decision-making and optimizing project
+                      outcomes.</li>
+                    <li>Proficient in creating and executing detailed project plans to ensure timely and efficient
+                      project delivery.</li>
+                    <li>Resourceful in identifying and resolving issues to enhance project workflows and overall
+                      efficiency.</li>
+                    <li>Effective communicator, facilitating smooth coordination between diverse teams and stakeholders.
+                    </li>
+                    <li>Strategic leader, experienced in managing projects from initial concept to successful completion
+                      with precise planning.</li>
+                    <li>Dedicated to conceptualizing and executing engineering projects with accuracy and
+                      professionalism.</li>
+
+
+
+                  </ul>
+
+                  </p><!-- <p>
+•	Well organized, effective communicator, conscientious multi-tasker, and understand client and costumer requirements
+</p> -->
+                </div>
+                <div class="col-12 mt-3">
+                  <a href="Ramesh Govindaswamy Resume.pdf" target="_blank" class="btn btn-download">Download My CV<i
+                      class="fa fa-download"></i></a>
+                  <a href="#contact" class="btn btn-hire">Hire Me! <i class="fa fa-file"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Personal Info Ends -->
+          <!-- Boxes Starts -->
+          <!--   <div class="col-12 col-lg-12 col-xl-12 pt-5 mt-lg-0 pb-5">
+        <div class="row">
+          <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+            <div class="utf-box-stats with-margin">
+			  <i class="fa fa-camera"></i>
+              <p class="m-0 position-relative">Photography</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+            <div class="utf-box-stats with-margin">
+			  <i class="fa fa-film"></i>
+              <p class="m-0 position-relative">Hiking & Adventure</p>
+            </div>
+          </div>
+          <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+            <div class="utf-box-stats with-margin">
+			  <i class="fa fa-cutlery"></i>
+              <p class="m-0 position-relative">Cooking</p>
+            </div>
+          </div>
+         
+           <div class="col-6 col-lg-3 col-sm-4 col-xs-12">
+             <a target="_blank" href="https://www.instagram.com/karmaaaspheree/">
+            <div class="utf-box-stats with-margin">
+        <i class="fa fa-instagram"></i>
+              <p class="m-0 position-relative">Instagram</p>
+            </div>
+              </a>
+          </div>
+      
+          		 
+     <i class="fa-solid fa-bowl-rice"></i>
+        </div>
+      </div> -->
+          <!-- Boxes Ends -->
+        </div>
+
+        <!-- Skills Starts -->
+
+        <!-- Skills Ends -->
+        <br>
+        <!-- Experience & Education Starts -->
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">My Education</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">August 2022 – May 2024 </span>
+                  <span class="time">GPA: 3</span>
+
+                  <h5>University of Texas, Arlington, TX <span class="place">Masters of Engineering in Civil Engineering
+                    </span></h5>
+                </li>
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">August 2017 – May 2021 </span>
+                  <!-- <span class="time">GPA: 3.45</span>  -->
+                  <h5>Nitte Meenakshi Institute of Technology, India<span class="place">Bachelors in Civil Engineering
+                    </span></h5>
+
+                </li>
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="exp" class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">Work Experience</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">September 2021 – July 2022</span>
+                  <h5>PROJECT ENGINEER | GPRR CONSTRUCTIONS, INDIA</h5>
+                  <p><b style="color:#ff0000">•</b> Directed three residential construction projects to on-time
+                    completion, achieving a 12% reduction in budgets. Managed the $1.2M Garuda Grand
+                    &nbsp;&nbsp;&nbsp;Apartments project, aligning deliverables with client expectations. <br>
+                    <b style="color:#ff0000">•</b> Employed AutoCAD, Civil 3D, and Revit for precise project
+                    documentation, enhancing visualization and report accuracy. Saved $100,000 through
+                    &nbsp;&nbsp;&nbsp;strategic budget management and detailed review of change orders. <br>
+                    <b style="color:#ff0000">•</b> Analyzed structural and architectural drawings, managing diverse
+                    teams to ensure compliance with steel and concrete standards. Streamlined &nbsp;&nbsp;&nbsp;material
+                    release and work order processes for efficient project execution. <br>
+                    <b style="color:#ff0000">•</b> Initiated risk assessment protocols to identify and mitigate design
+                    risks, increasing client satisfaction by 18% and establishing new quality
+                    &nbsp;&nbsp;&nbsp;benchmarks.<br>
+
+
+
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <span class="time">May 2021 – September 2021</span>
+                  <h5>CIVIL ENGINEER INTERN | GOVINDASWAMY CIVIL CONTRACTOR, INDIA</h5>
+                  <p><b style="color:#ff0000">•</b> Reorganized resource efficiency by 20% with precise scheduling and
+                    budgeting, using data analytics for effective risk management. <br>
+                    <b style="color:#ff0000">•</b> Boosted client satisfaction by 11% through stringent quality controls
+                    and improved communication methods. <br>
+                    <b style="color:#ff0000">•</b> Orchestrated weekly cross-departmental meetings, increasing the
+                    timely completion of projects by 25% and enhancing team coordination and
+                    &nbsp;&nbsp;&nbsp;effectiveness.<br>
+
+                  </p>
+                </li>
+
+
+
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">PROJECT EXPERIENCE</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Aug 2017 – March 2019</span> -->
+                  <h5>Slurry Wall Construction for Headworks Influent Station</h5>
+                  <p><b style="color:#ff0000">•</b> Engineered a robust slurry wall using 10,576 cubic yards of Portland
+                    cement concrete and bentonite slurry; ensured structural integrity to handle an
+                    &nbsp;&nbsp;&nbsp;impressive 868 MGD pumping rate across two shafts measuring 69 ft and 118 ft.<br>
+
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Jan 2022 - May 2022</span> -->
+                  <h5>Commercial Building Design Using Revit</h5>
+                  <p><b style="color:#ff0000">•</b> Led the development of a commercial building model using Revit,
+                    producing detailed 3D renderings that enhanced visualization and facilitated
+                    &nbsp;&nbsp;&nbsp;precise project planning. <br>
+                    <b style="color:#ff0000">•</b> Created comprehensive floor and component schedules, streamlining
+                    execution and ensuring detailed oversight from concept to completion.<br>
+
+                    
+
+                  </p>
+                </li>
+
+
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Jan 2023 - May 2023 </span> -->
+                  <h5>Construction sustainability for Led Green Retrofit Plan Development for Casa Cortile</h5>
+                  <p><b style="color:#ff0000">•</b> Spearheaded comprehensive cost estimations for a green retrofit
+                    initiative by analyzing energy efficiency metrics and sustainable design strategies;
+                    &nbsp;&nbsp;&nbsp;achieved a projected reduction of annual operating costs by $50,000 upon
+                    implementation.
+                    
+
+                  </p>
+                </li>
+
+
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Jan 2023 - May 2023 </span> -->
+                  <h5>Box Girder Bridge Timber Falsework Design</h5>
+                  <p><b style="color:#ff0000">•</b> Crafted a comprehensive load analysis using RISA 2D software,
+                    confirming compliance with relevant industry standards; this ensured the structural
+                    &nbsp;&nbsp;&nbsp;integrity of the bridge and mitigated potential risks during construction phases.
+                    
+
+                  </p>
+                </li>
+
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Jan 2023 - May 2023 </span> -->
+                  <h5>Project Management & Oracle Primavera P6</h5>
+                  <p><b style="color:#ff0000">•</b> Drove the project to completion 31 days ahead of schedule, boosting efficiency by 25% and reducing risks by 30%. <br>
+                    <b style="color:#ff0000">•</b> Refined delivery and risk mitigation through a case study, risk management workshops, and Primavera P6 training. 
+                    
+                    <br>
+
+                  </p>
+                </li>
+
+
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Jan 2023 - May 2023 </span> -->
+                  <h5>Survey and Design Project</h5>
+                  <p><b style="color:#ff0000">•</b> Conducted block leveling and site assessments for village water supply systems, including intake structures, water treatment plants, and overhead &nbsp;&nbsp;&nbsp;tanks, across a 5,000 sq. ft. area, ensuring accurate elevation control. <br>
+                    <b style="color:#ff0000">•</b> Executed a comprehensive highway survey for a 10 km road, focusing on gradient alignment as per IRC standards. Utilized AutoCAD and Civil 3D to &nbsp;&nbsp;&nbsp;design pavements and develop bearing plans, ensuring compliance with regulatory guidelines.<br>
+                    <b style="color:#ff0000">•</b> Created detailed blueprints and key plans for both village infrastructure and highway projects, integrating all design elements into final construction &nbsp;&nbsp;&nbsp;plans
+                    
+                    <br>
+
+                  </p>
+                </li>
+
+
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="row">
+          <div class="col-lg-12 m-15px-tb">
+            <h3 class="col-title">CERTIFICATIONS</h3>
+            <div class="utf-resume-box">
+              <ul>
+                <li>
+                  <div class="icon"></div>
+                  <!-- <span class="time">Aug 2019 – Present</span> -->
+                  <h5><b style="color:#ff0000;line-height: 1.6;">•</b> AutoCAD Certified Professional, Revit Certified Professional, OSHA 30-Hour Construction Safety Certification, 3DS MAX Certified, &nbsp;&nbsp;&nbsp;Certified Construction Manager-in-Training (CMIT), Procore Certified: Student (Procore)</h5>
+                
+
+
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Experience & Education Ends -->
+        <div class="pb-3 pt-5 utf-testimonials-section utf-single-section">
+          <div class="col-12">
+            <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">Technical Expertise
+              : </h3>
+          </div>
+
+
+
+          <h6 style="display: inline-block;" class="utf-client-name">Technical Skills : </h6>&nbsp;
+          <span class="timee">MS Excel</span>&nbsp;
+          <span class="timee">MS Projects</span>&nbsp;
+          <span class="timee">Microsoft Office</span>&nbsp;
+          <span class="timee">AutoCAD</span>&nbsp;
+          <span class="timee">Civil 3D</span>&nbsp;
+
+          <span class="timee">Photoshop</span>&nbsp;
+          <span class="timee">Primavera</span>&nbsp;
+          <span class="timee">Bluebeam</span>&nbsp;
+          <span class="timee">Revit</span>&nbsp;
+          <span class="timee">Procore</span>&nbsp;
+
+
+          <br>
+         
+          <h6 style="display: inline-block;" class="utf-client-name">Hard Skills : </h6>&nbsp;
+          <span class="timee">Project Management</span>&nbsp;
+          <span class="timee">Structural & Architectural Analysis & Design</span>&nbsp;
+          <span class="timee">Construction Management</span>&nbsp;
+          <span class="timee">Cost Estimation & Budgeting</span>&nbsp;
+          <span class="timee">Risk Assessment & Mitigation</span>&nbsp;
+          <span class="timee">Surveying & Mapping</span>&nbsp;
+
+
+
+
+
+          
+
+
+        </div>
+        <!-- Provide Services Starts -->
+
+    <div class="row pb-3 pt-5 utf-services-section">
+      <div class="col-12">
+        <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">What Can I Do</h3>
+      </div>
+	  <div class="col-12 col-md-6 col-lg-4">
+		<div class="utf-single-service">
+		  <h6 class="utf-service-title">Project Management</h6>
+		</div>
+	  </div>
+
+	   <div class="col-12 col-md-6 col-lg-4">
+		<div class="utf-single-service">
+		  <h6 class="utf-service-title">Construction Management</h6>
+		</div>
+	  </div>
+
+	   <div class="col-12 col-md-6 col-lg-4">
+		<div class="utf-single-service">
+		  <h6 class="utf-service-title">Risk Assessment</h6>
+		</div>
+	  </div>
+
+
+
+    <div class="col-12 col-md-6 col-lg-4">
+    <div class="utf-single-service">
+      <h6 class="utf-service-title">Architectural Analysis</h6>
+    </div>
+    </div>
+
+   
+
+     <div class="col-12 col-md-6 col-lg-4">
+    <div class="utf-single-service">
+      <h6 class="utf-service-title">Research Skills</h6>
+    </div>
+    </div>
+
+
+     <div class="col-12 col-md-6 col-lg-4">
+    <div class="utf-single-service">
+      <h6 class="utf-service-title">Cost Estimation</h6>
+    </div>
+    </div>
+
+
+     <div class="col-12 col-md-6 col-lg-4">
+    <div class="utf-single-service">
+      <h6 class="utf-service-title">Surveying & Mapping</h6>
+    </div>
+    </div>
+	 
+
+    </div> 
+
+
+
+
+        <div class="row pb-3 pt-5 utf-services-section">
+          <div class="col-12">
+            <h3 class="pb-5 pb-sm-5 mb-3 mb-sm-0 text-center text-sm-center custom-title ft-wt-600">My Hobbies</h3>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="utf-box-stats with-margin">
+              <i class="fa-solid fa-basketball"></i>
+              <p class="m-0 position-relative">Basketball</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="utf-box-stats with-margin">
+             <img src="img/dance.png" class="img-fluid" style="width: 37%;">
+              <p class="m-0 position-relative">Dance</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="utf-box-stats with-margin">
+              <img src="img/cricket.png" class="img-fluid" style="width: 37%;">
+              <p class="m-0 position-relative">Cricket</p>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="utf-box-stats with-margin">
+              <i class="fa-solid fa-gamepad"></i>
+              <p class="m-0 position-relative">Gaming</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="utf-box-stats with-margin">
+              <i class="fa-solid fa-dumbbell"></i>
+              <p class="m-0 position-relative">Gym</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 col-lg-2">
+            <div class="utf-box-stats with-margin">
+              <i class="fa-solid fa-music"></i>
+              <p class="m-0 position-relative">Music</p>
+            </div>
+          </div>
+
+        
+
+
+
+        </div>
+
+
+        
+
+
+        <!-- Provide Services Ends -->
+
+
+
+      </div>
+
+
+  </div>
+
+
+
+  <!-- Testimonials section Ends -->
+
+
+  <!-- Choose Your Plan Ends -->
+  </div>
+  </section>
+  </div>
+  <!-- Main Content Ends -->
+
+
+
+  <div class="contact">
+    <!-- Page Title Starts -->
+    <section class="title-section text-center text-sm-center revealator-slideup revealator-once revealator-delay1">
+      <!-- <p class="utf-section-description">Connect Me</p>	 -->
+      <h1>Get In <span>Touch</span></h1>
+      <div class="animated-bar"></div>
+      <!-- <p class="text-max-700">Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua enim sed do sit.</p> -->
+    </section>
+    <!-- Page Title Ends -->
+
+    <!-- Main Content Starts -->
+    <section id="contact"
+      class="main-content revealator-slideup revealator-once revealator-delay1 no-transform revealator-within">
+      <div class="container">
+        <div class="row">
+          <!-- Left Side Starts -->
+          <div class="col-12 col-lg-5">
+            <h4 class="utf-content-title">My Contact Info</h4>
+
+
+            <p class="utf-custom-span-contact position-relative"><i class="fa fa-map-marker position-absolute"></i>
+              <span class="d-block">Location</span>Arlington, Texas, United States</p>
+            <p class="utf-custom-span-contact position-relative"><i class="fa fa-linkedin position-absolute"></i> <span
+                class="d-block">LinkedIn</span><a target="_blank"
+                href="https://www.linkedin.com/in/ramesh-govindaswamy/">ramesh-govindaswamy/</a></p>
+            <p class="utf-custom-span-contact position-relative"><i class="fa fa-envelope position-absolute"></i> <span
+                class="d-block">Email Address</span><a
+                href="mailto:govindaswamyramesh23@gmail.com">govindaswamyramesh23@gmail.com</a></p>
+            <ul class="social list-unstyled pt-2 mb-5">
+
+
+              <!-- <li class="linkedin"><a title="Linkedin" target="_blank" -->
+                  <!-- href="https://www.linkedin.com/in/saisuhas-linga/"><i class="fa fa-linkedin"></i></a></li> -->
+              <!-- <li class="twitter"><a title="Twitter" target="_blank" href="#"><i class="fa fa-twitter"></i></a></li> -->
+              <!-- <li class="instagram"><a title="Instagram" target="_blank" -->
+                  <!-- href="https://www.instagram.com/saisuhas.linga/"><i class="fa fa-instagram"></i></a></li> -->
+              <!-- <li class="facebook"><a title="Tiktok" target="_blank" href="#"> <iconify-icon icon="fa-brands:tiktok"></iconify-icon></a></li> -->
+
+            </ul>
+            <!--    <ul class="social list-unstyled pt-2 mb-5">-->
+            <!--      <li class="facebook"><a title="Facebook" href="#"><i class="fa fa-facebook"></i></a></li>-->
+            <!--      <li class="linkedin"><a title="Linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>-->
+            <!--<li class="twitter"><a title="Twitter" href="#"><i class="fa fa-twitter"></i></a></li>-->
+            <!--<li class="instagram"><a title="Instagram" href="#"><i class="fa fa-instagram"></i></a></li>-->
+            <!--      <li class="whatsapp"><a title="Whatsapp" href="#"><i class="fa fa-whatsapp"></i></a></li>     -->
+            <!--    </ul>-->
+          </div>
+          <!-- Left Side Ends -->
+          <!-- Contact Form Starts -->
+          <div class="col-12 col-lg-7">
+            <form class="contactform utf-contact-form form mb-5" method="post" action="">
+              <h4 class="utf-content-title">Contact Me</h4>
+              <!-- Success Message -->
+              <!--  <div class="col-md-12 mt-3 p-0">-->
+              <!--<div class="alert alert-success utf-contact-msg" style="display:none;text-align:center;width:100%;" role="alert">       -->
+              <!--<div class="col-12 p-0">Your Message Was Sent Successfully.</div>-->
+              <!-- </div>-->
+              <!--  </div>-->
+              <div class="row">
+                <div style="margin-bottom: 20px;" class="col-12 col-md-6 input-group">
+                  <input type="text" name="name" id="name" class="form-control" placeholder="Your Name" required="">
+                </div>
+                <div style="margin-bottom: 20px;" class="col-12 col-md-6 input-group">
+                  <input name="email" type="email" id="email" class="form-control" placeholder="Your Email" required="">
+                </div>
+                <!--   <div style="margin-bottom: 20px;" class="col-12 col-md-6 input-group">
+                <input type="text" name="subject" id="subject" class="form-control" placeholder="Write a Subject" required="">
+              </div> -->
+                <!--  <div style="margin-bottom: 20px;" class="col-12 col-md-6 input-group">
+                <input type="number" name="phone" id="phone" class="form-control" placeholder="Phone Number" required="">
+              </div> -->
+                <div class="col-12 col-md-12 input-group">
+                  <textarea name="message" id="message" class="form-control" placeholder="Your Message..."
+                    required=""></textarea>
+                </div>
+                <div class="col-12 col-md-12 input-group">
+                  <button name="submit" type="submit" class="mx-auto btn btn_submit" value="Submit">Submit <i
+                      class="fa fa-envelope"></i></button>
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- Contact Form Ends -->
+        </div>
+        <!-- Map Section Start -->
+
+        <!-- Map Section End -->
+      </div>
+      <center>
+        <h5 style="font-size: medium;">Powered By <a target="_blank" style="color:red;"
+            href="https://www.unitedopt.com/">United OPT</a></h5>
+      </center>
+    </section>
+    <!-- Contact Section Ends -->
+  </div>
+
+  <script>
+    let slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("demo");
+      let captionText = document.getElementById("caption");
+      if (n > slides.length) { slideIndex = 1 }
+      if (n < 1) { slideIndex = slides.length }
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " active";
+      captionText.innerHTML = dots[slideIndex - 1].alt;
+    }
+  </script>
+  <!-- JS Files -->
+  <script src="https://code.iconify.design/iconify-icon/1.0.0-beta.3/iconify-icon.min.js"></script>
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/fm.revealator.jquery.min.js"></script>
+  <script src="js/imagesloaded.pkgd.min.js"></script>
+  <script src="js/masonry.pkgd.min.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/jquery.hoverdir.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/typed.js"></script>
+  <script src="js/custom_jquery.js"></script>
+
+  <script src="js/jquery.hoverdir.js"></script>
+  <script src="js/tiny-slider.js"></script>
+  <script src="js/bootstrap.js"></script>
+
+
+  <script src="js/modernizr.custom.js"></script>
+  <script src="js/cbpGridGallery.js"></script>
+
+
+  <!--Map Js-->
+
+
+  <script>
+    var typed = new Typed('.typed-words', {
+      strings: ["Projector Engineer", " Civil Engineer"],
+      typeSpeed: 80,
+      backSpeed: 80,
+      backDelay: 4000,
+      startDelay: 1000,
+      loop: true,
+      showCursor: true
+    });
+  </script>
+  <script>
+    tns({
+      container: ".utf-testimonials-section .utf-testimonial-slider",
+      items: 2,
+      gutter: 30,
+      responsive: {
+        0: {
+          items: 1,
+          gutter: 0
+        },
+        768: {
+          items: 2,
+          gutter: 30
+        }
+      },
+      preventScrollOnTouch: "auto",
+      slideBy: "page",
+      mouseDrag: !0,
+      swipeAngle: !1,
+      speed: 400,
+      controls: !1,
+      autoHeight: !0,
+      navPosition: "bottom"
+    });
+  </script>
+  </script>
+</body>
+
+<!-- Mirrored from utouchdesign.com/themes/meetu/dark/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 06 Oct 2021 18:08:41 GMT -->
+
+</html>
